@@ -1,0 +1,113 @@
+<script type="text/html" id="card-map">
+    <div class="container mt-5">
+        <div class="card-map">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{ title }}</h5>
+                <div class="map-container" ref="mapContainer" style="height: 450px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script>
+    Vue.component("card-map", {
+        template: "#card-map",
+        data() {
+            return {
+                title: 'Esperando por seleccion de pais',
+                userImage: '',
+                userCountry: '',
+                latitude: null,
+                longitude: null,
+                map: null 
+            };
+        },
+        methods: {
+            initMap(){
+
+                    this.map = new google.maps.Map(this.$refs.mapContainer, {
+                        center: { lat: 0, lng: 0 }, 
+                        zoom: 2 
+                    });
+            },
+
+            loadMap() {
+
+                this.$store.dispatch('startLoadingCoordinates');
+
+                axios.get(`Map/Coordinates?country=${this.userCountry}`)
+                    .then(response => {
+                        const data = response.data;
+                        this.latitude = data.latitude;
+                        this.longitude = data.longitude;
+
+                        this.map = new google.maps.Map(this.$refs.mapContainer, {
+                            center: { lat:this.latitude, lng:this.longitude }, 
+                            zoom: 4
+                        });
+
+                        const marker = new google.maps.Marker({
+                            position: { lat: this.latitude, lng: this.longitude },
+                            map: this.map,
+                            icon: {
+                                url: this.userImage,  
+                                scaledSize: new google.maps.Size(50, 50),  
+                                anchor: new google.maps.Point(25, 25)  
+                            }
+                        });
+                        this.$store.dispatch('stopLoadingCoordinates');
+                    })
+                    .catch(error => {
+                        this.$store.dispatch('stopLoadingCoordinates');
+                    });
+            }
+        },
+        mounted() {
+
+            this.initMap();
+
+            EventBus.$on('userConnected', (data) => {
+
+                this.userImage = data.userImage;
+                this.userCountry = data.userCountry;
+                this.title = data.userCountry;
+                this.loadMap(); 
+
+            });
+        }
+    });
+</script>
+
+<style>
+    .card-map {
+        border: 2px solid #d1d3d4;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .card-map:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px); 
+    }
+
+    .card-body {
+        background-color: #f8f9fa;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        color: #343a40;
+        font-weight: 600;
+    }
+
+    .map-container {
+        margin-top: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+</style>

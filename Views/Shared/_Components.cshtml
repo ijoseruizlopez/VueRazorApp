@@ -1,0 +1,28 @@
+﻿<script>
+    const EventBus = new Vue();
+    const store = new Vuex.Store({
+      state: {
+        loadingCoordinates: false, // Estado inicial, false significa que no estamos cargando
+      },
+      mutations: {
+        setLoadingCoordinates(state, value) {
+          state.loadingCoordinates = value; // Cambia el valor de loadingCoordinates
+        }
+      },
+      actions: {
+        startLoadingCoordinates({ commit }) {
+          commit('setLoadingCoordinates', true); // Activa el estado de carga
+        },
+        stopLoadingCoordinates({ commit }) {
+          commit('setLoadingCoordinates', false); // Desactiva el estado de carga
+        }
+      },
+      getters: {
+        isLoadingCoordinates(state) {
+          return state.loadingCoordinates; // Getter para leer el estado
+        }
+      }
+    });
+</script>
+@Html.Partial("~/Views/Shared/VueComponents/_CardUser.cshtml")
+@Html.Partial("~/Views/Shared/VueComponents/_CardMap.cshtml")

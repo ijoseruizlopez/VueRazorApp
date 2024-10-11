@@ -1,0 +1,101 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="appform">
+    <div class="block-ui d-flex" id="blockUi" v-if="loading">
+        <div class="text-center">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden"></span>
+            </div>
+            <p class="text-white mt-3">Cargando formulario, espera...</p>
+        </div>
+    </div>
+
+    <div v-else id="tabs-wrapper">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="formTab1" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Form 1</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="formTab2" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Form 2</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="formTab1">
+                <form id="userForm" v-if="!loading">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" v-model="formData.name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" v-model="formData.email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <select class="form-select" id="country" v-model="formData.country">
+                            <option disabled value="">Select your country</option>
+                            <option v-for="country in countries" :key="country.code" :value="country.code">{{ country.name }}</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="agree" v-model="formData.agree">
+                        <label class="form-check-label" for="agree">
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" :disabled="submitting" v-on:click="submitForm">Submit</button>
+                    <button type="button" class="btn btn-danger" :disabled="!submitting" v-on:click="clearForm">Clear</button>
+                </form>
+
+                <div v-if="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
+                <div v-if="successMessage" class="alert alert-success mt-3">{{ successMessage }}</div>
+            </div>
+
+            <!-- Tab 2 - Second Form (Static HTML Form) -->
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="formTab2">
+                <form id="dynamicForm" >
+                    <div class="mb-3">
+                        <label for="name2" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name2" v-model="formDataSecond.name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email2" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email2" v-model="formDataSecond.email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age" v-model="formDataSecond.age" placeholder="Enter your age">
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="agree2" v-model="formDataSecond.agree">
+                        <label class="form-check-label" for="agree2">
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" :disabled="submittingSecondForm" v-on:click="submitSecondForm">Submit</button>
+                    <button type="button" class="btn btn-danger" :disabled="!submittingSecondForm" v-on:click="clearSecondForm">Clear</button>
+                </form>
+
+                <div v-if="errorMessageSecondForm" class="alert alert-danger mt-3">{{ errorMessageSecondForm }}</div>
+                <div v-if="successMessageSecondForm" class="alert alert-success mt-3">{{ successMessageSecondForm }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mixin -->
+<script src="~/js/form/mixina.js"></script>
+<script src="~/js/form/mixinb.js"></script>
+<script src="~/js/form/app.js"></script>

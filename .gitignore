@@ -1,0 +1,24 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos de configuración local
+appsettings.Development.json
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de Visual Studio Code
+.vscode/
+
+# Carpetas de dependencias de Node.js (si usas npm o yarn)
+node_modules/
+
+# Carpetas de dependencias de .NET
+packages/
+
+# Archivos de logs
+*.log

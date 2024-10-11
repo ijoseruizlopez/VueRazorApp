@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|d:\\programacion\\proyectos net\\vuerazorapp\\vuerazorapp\\views\\form\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|solutionrelative:views\\form\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|d:\\programacion\\proyectos net\\vuerazorapp\\vuerazorapp\\views\\shared\\vuecomponents\\_cardmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|solutionrelative:views\\shared\\vuecomponents\\_cardmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|d:\\programacion\\proyectos net\\vuerazorapp\\vuerazorapp\\views\\shared\\vuecomponents\\_carduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|solutionrelative:views\\shared\\vuecomponents\\_carduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|d:\\programacion\\proyectos net\\vuerazorapp\\vuerazorapp\\views\\app\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|solutionrelative:views\\app\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|d:\\programacion\\proyectos net\\vuerazorapp\\vuerazorapp\\wwwroot\\js\\form\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|solutionrelative:wwwroot\\js\\form\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|d:\\programacion\\proyectos net\\vuerazorapp\\vuerazorapp\\wwwroot\\js\\form\\mixina.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|solutionrelative:wwwroot\\js\\form\\mixina.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|d:\\programacion\\proyectos net\\vuerazorapp\\vuerazorapp\\wwwroot\\js\\form\\mixinb.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|solutionrelative:wwwroot\\js\\form\\mixinb.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|d:\\programacion\\proyectos net\\vuerazorapp\\vuerazorapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C1C1AF11-0573-4970-B1DB-F925DFEFCBAE}|VueRazorApp.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_CardUser.cshtml",
+              "DocumentMoniker": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\Views\\Shared\\VueComponents\\_CardUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\VueComponents\\_CardUser.cshtml",
+              "ToolTip": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\Views\\Shared\\VueComponents\\_CardUser.cshtml",
+              "RelativeToolTip": "Views\\Shared\\VueComponents\\_CardUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T03:58:17.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_CardMap.cshtml",
+              "DocumentMoniker": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\Views\\Shared\\VueComponents\\_CardMap.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\VueComponents\\_CardMap.cshtml",
+              "ToolTip": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\Views\\Shared\\VueComponents\\_CardMap.cshtml",
+              "RelativeToolTip": "Views\\Shared\\VueComponents\\_CardMap.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T03:57:49.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\Views\\Form\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Form\\Index.cshtml",
+              "ToolTip": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\Views\\Form\\Index.cshtml",
+              "RelativeToolTip": "Views\\Form\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T03:57:31.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\Views\\App\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\App\\Index.cshtml",
+              "ToolTip": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\Views\\App\\Index.cshtml",
+              "RelativeToolTip": "Views\\App\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T03:56:53.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "mixinb.js",
+              "DocumentMoniker": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\wwwroot\\js\\Form\\mixinb.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\Form\\mixinb.js",
+              "ToolTip": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\wwwroot\\js\\Form\\mixinb.js",
+              "RelativeToolTip": "wwwroot\\js\\Form\\mixinb.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-11T03:56:23.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-11T03:56:21.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "mixina.js",
+              "DocumentMoniker": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\wwwroot\\js\\Form\\mixina.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\Form\\mixina.js",
+              "ToolTip": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\wwwroot\\js\\Form\\mixina.js",
+              "RelativeToolTip": "wwwroot\\js\\Form\\mixina.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-11T03:55:14.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.js",
+              "DocumentMoniker": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\wwwroot\\js\\Form\\app.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\Form\\app.js",
+              "ToolTip": "D:\\Programacion\\Proyectos Net\\VueRazorApp\\VueRazorApp\\wwwroot\\js\\Form\\app.js",
+              "RelativeToolTip": "wwwroot\\js\\Form\\app.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-11T03:55:12.714Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
