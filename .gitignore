@@ -22,3 +22,7 @@ packages/
 
 # Archivos de logs
 *.log
+
+# Ignorar archivos y carpetas de Visual Studio
+.vs/
+*.vsidx
